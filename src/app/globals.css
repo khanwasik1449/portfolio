@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  --foreground: #f0f0f0;
+  --neon-green: #ccff00;
+  --neon-cyan: #00ffff;
+  --dark-blue: #000080;
+  --terminal-green: #00ff41;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-neon-green: var(--neon-green);
+  --color-neon-cyan: var(--neon-cyan);
+  --color-dark-blue: var(--dark-blue);
+  --color-terminal-green: var(--terminal-green);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  cursor: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-mono), monospace;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(204, 255, 0, 0.3);
+  color: #ccff00;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.97; }
+}
+
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.animate-flicker {
+  animation: flicker 0.15s infinite;
+}
+
+.animate-scanline {
+  animation: scanline 8s linear infinite;
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
+}
+
+.animate-progress {
+  animation: progress 2s ease-out forwards;
+}
+
+@keyframes progress {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
