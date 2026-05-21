@@ -5,6 +5,24 @@ import { Folder, ExternalLink, Code } from "lucide-react";
 
 const projects = [
   {
+    title: "Inventory Register & Meeting Room Booking",
+    description:
+      "Full-stack inventory management system with PIN-based login, 84 products, 275 users, stock tracking (Check Out/Stock In/Stock Out), low-stock alerts, CSV exports, and a separate meeting room booking app with conflict detection and time-slot management. Built for BRAC IED.",
+    tech: ["Django 6.0", "Python 3.12", "PostgreSQL", "Waitress", "systemd", "JavaScript"],
+    github: null,
+    live: "http://10.10.11.205:8000",
+    featured: true,
+  },
+  {
+    title: "HR Contract Management System",
+    description:
+      "Web-based application for managing employee contracts at BRAC IED, BRAC University. Supports contract creation, PDF generation (New/Extension/Revision/Renewal), email delivery (individual & bulk), CSV bulk upload, payslip management, and employee records with date range, status, and type filters.",
+    tech: ["Django", "Python", "SQLite", "WeasyPrint", "Django Q2", "Gunicorn"],
+    github: null,
+    live: null,
+    featured: true,
+  },
+  {
     title: "ICT Equipment Requisition System",
     description:
       "Dynamic multi-level approval workflow for ICT equipment requests. Routes to department heads then final approver with automated email notifications and real-time status tracking dashboard.",

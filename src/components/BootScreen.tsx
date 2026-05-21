@@ -59,8 +59,6 @@ export default function BootScreen({ onComplete }: { onComplete: () => void }) {
   return (
     <motion.div
       className="fixed inset-0 z-[9999] bg-[#000080] text-white font-mono p-6 md:p-12 overflow-hidden"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
     >
