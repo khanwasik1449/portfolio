@@ -5,38 +5,56 @@ import { Cpu } from "lucide-react";
 
 const skillCategories = [
   {
-    name: "IT Support & Systems",
+    name: "Backend & Frameworks",
     skills: [
-      { name: "Windows / Ubuntu / MacOS", level: 90 },
-      { name: "Zoom / Meet / Teams Support", level: 88 },
-      { name: "Google Workspace / Titan Mail", level: 92 },
-      { name: "ERPNext / SnipeIT", level: 85 },
+      { name: "Django / Python", level: 88 },
+      { name: "Next.js / React", level: 82 },
+      { name: "PostgreSQL / SQLite", level: 85 },
+      { name: "REST API Design", level: 80 },
     ],
   },
   {
-    name: "Networking & Security",
+    name: "Frontend & UI",
     skills: [
-      { name: "Mikrotik / Cisco (CCNA)", level: 82 },
-      { name: "Firewall / NAT / VPN / VLAN", level: 85 },
-      { name: "LAN / WAN / DHCP / DNS", level: 88 },
-      { name: "Wireless Controllers", level: 80 },
+      { name: "Tailwind CSS", level: 85 },
+      { name: "JavaScript / TypeScript", level: 82 },
+      { name: "Framer Motion", level: 78 },
+      { name: "Responsive Design", level: 85 },
     ],
   },
   {
     name: "Automation & Data",
     skills: [
-      { name: "Google Sheets / Apps Script", level: 90 },
-      { name: "Looker Studio / GSheets Viz", level: 88 },
-      { name: "Forms Automation", level: 85 },
-      { name: "Process Automation", level: 92 },
+      { name: "Google Sheets / Apps Script", level: 92 },
+      { name: "Looker Studio / Dashboards", level: 88 },
+      { name: "Process Automation", level: 90 },
+      { name: "CSV / Data Pipelines", level: 85 },
+    ],
+  },
+  {
+    name: "DevOps & Deployment",
+    skills: [
+      { name: "Linux Server / systemd", level: 85 },
+      { name: "Nginx / Gunicorn / Waitress", level: 82 },
+      { name: "Docker / Git", level: 80 },
+      { name: "DNS / SSL / Hosting", level: 85 },
     ],
   },
   {
     name: "Web & LMS",
     skills: [
       { name: "WordPress / WooCommerce", level: 82 },
-      { name: "Page Building", level: 85 },
-      { name: "Moodle (LMS)", level: 88 },
+      { name: "Moodle (LMS)", level: 85 },
+      { name: "Google Workspace", level: 90 },
+      { name: "ERPNext / SnipeIT", level: 80 },
+    ],
+  },
+  {
+    name: "Networking & Infrastructure",
+    skills: [
+      { name: "Mikrotik / Cisco (CCNA)", level: 82 },
+      { name: "Firewall / VPN / VLAN", level: 85 },
+      { name: "LAN / WAN / DHCP / DNS", level: 88 },
       { name: "CCTV / IP Camera / NVR", level: 80 },
     ],
   },
